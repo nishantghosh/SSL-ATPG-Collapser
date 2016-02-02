@@ -1,44 +1,27 @@
 *****************************************************************
-*************************   PROJECT 1   *************************
+*********************  SSL FAULT COLLAPSER  *********************
 *****************************************************************
 
 The directory structure is as follows:
 ----------------------------------------------------------------------------
-./collapse.py  - The source code for the project. All of the coding you need
-	         to do for this project will be done in this file.
+./collapse.py  - The source code for the project.
 
-./bench        - ISCAS circuits as well as correct example program outputs.
+./bench        - ISCAS circuits as well as correct benchmark program outputs.
 
 ./logs         - Logs created during execution are placed here by default.
 	         The collapse.py as provided automatically creates a log
 		 file when run.
 ----------------------------------------------------------------------------
 
-You should be able to execute the program immediately. Launch the 765
-virtual environment (see project description) and execute the program:
-       
-(765py) prompt> python collapse.py bench/c17.bench temp
 
 Note that the program will create two output files by default,
 "temp.fclass" and "temp.order". The location (and name) of these files is
 controlled by the last argument provided when invoking the program.
 
-To complete this project you will need to complete the "collapse_fault" and
-"order" function. For extra credit you can implement some function or
-functions to return the dominated but not dominating faults based on the
-collapser results. Assuming you use the program as its given, creating the
-appropriate output files and writing out results in the proper format is
-handled for you for the required portions of the project (collapsing and
-ordering the faults) but not for the extra credit (dominated not
-dominating). Correct outputs are given in the files in the bench/
-directory with ".orig" suffixes and can be used to check the correctness
-of your program.
+Documentation for the cframe module can currently be found in:
 
-Documentation for the cframe module can currently be found in one of two
-places:
-
-	1. Comments located in the cframe source code, found at:
-	   /afs/ece/class/ee765/project/cframe/cframe/cframe.py
+	1. https://users.ece.cmu.edu/~bniewe/python_cframe/_modules/cframe.html#Circuit
+	   (Courtesy of Benjamin Niewenhuis) 
 	2. Invoking the help() function in an interactive python shell:
 	   (765py) prompt> python
 	   >>> import cframe
