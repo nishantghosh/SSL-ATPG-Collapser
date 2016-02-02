@@ -1,0 +1,95 @@
+# Fault class tree for c32.bench
+H> n stuck-at 0
+   Dominates:
+    1-D> h stuck-at 1
+       Equivalent faults:
+       E> a->h stuck-at 0
+       E> d_not stuck-at 0
+       E> d->d_not stuck-at 1
+    1-D> i stuck-at 1
+       Equivalent faults:
+       E> g->i stuck-at 0
+       E> d->i stuck-at 0
+    1-D> j stuck-at 1
+       Equivalent faults:
+       E> b->j stuck-at 0
+       E> e_not stuck-at 0
+       E> e->e_not stuck-at 1
+    1-D> k stuck-at 1
+       Equivalent faults:
+       E> g->k stuck-at 0
+       E> e->k stuck-at 0
+    1-D> l stuck-at 1
+       Equivalent faults:
+       E> c->l stuck-at 0
+       E> f_not stuck-at 0
+       E> f->f_not stuck-at 1
+    1-D> m stuck-at 1
+       Equivalent faults:
+       E> g->m stuck-at 0
+       E> f->m stuck-at 0
+
+H> n stuck-at 1
+   Equivalent faults:
+   E> h stuck-at 0
+   E> i stuck-at 0
+   E> j stuck-at 0
+   E> k stuck-at 0
+   E> l stuck-at 0
+   E> m stuck-at 0
+   Dominates:
+    1-D> a->h stuck-at 1
+    1-D> d_not stuck-at 1
+       Equivalent faults:
+       E> d->d_not stuck-at 0
+    1-D> g->i stuck-at 1
+    1-D> d->i stuck-at 1
+    1-D> b->j stuck-at 1
+    1-D> e_not stuck-at 1
+       Equivalent faults:
+       E> e->e_not stuck-at 0
+    1-D> g->k stuck-at 1
+    1-D> e->k stuck-at 1
+    1-D> c->l stuck-at 1
+    1-D> f_not stuck-at 1
+       Equivalent faults:
+       E> f->f_not stuck-at 0
+    1-D> g->m stuck-at 1
+    1-D> f->m stuck-at 1
+
+H> a stuck-at 0
+
+H> a stuck-at 1
+
+H> d stuck-at 0
+
+H> d stuck-at 1
+
+H> g stuck-at 0
+   Dominates:
+    1-D> a->g stuck-at 1
+    1-D> b->g stuck-at 1
+    1-D> c->g stuck-at 1
+
+H> g stuck-at 1
+   Equivalent faults:
+   E> a->g stuck-at 0
+   E> b->g stuck-at 0
+   E> c->g stuck-at 0
+
+H> b stuck-at 0
+
+H> b stuck-at 1
+
+H> e stuck-at 0
+
+H> e stuck-at 1
+
+H> c stuck-at 0
+
+H> c stuck-at 1
+
+H> f stuck-at 0
+
+H> f stuck-at 1
+

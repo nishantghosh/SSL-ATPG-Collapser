@@ -1,0 +1,26 @@
+# c32.bench
+
+input(a)
+input(b)
+input(c)
+input(d)
+input(e)
+input(f)
+
+output(n)
+
+g = nand(a, b, c)
+
+d_not = not(d)
+h = nand(a, d_not)
+i = nand(g, d)
+
+e_not = not(e)
+j = nand(b, e_not)
+k = nand(g, e)
+
+f_not = not(f)
+l = nand(c, f_not)
+m = nand(g, f)
+
+n = nand(h, i, j, k, l, m)

@@ -1,0 +1,57 @@
+# Fault class tree for c17.bench
+H> 22 stuck-at 0
+   Dominates:
+    1-D> 10 stuck-at 1
+       Equivalent faults:
+       E> 1 stuck-at 0
+       E> 3->10 stuck-at 0
+    1-D> 16->22 stuck-at 1
+
+H> 22 stuck-at 1
+   Equivalent faults:
+   E> 10 stuck-at 0
+   E> 16->22 stuck-at 0
+   Dominates:
+    1-D> 1 stuck-at 1
+    1-D> 3->10 stuck-at 1
+
+H> 23 stuck-at 0
+   Dominates:
+    1-D> 16->23 stuck-at 1
+    1-D> 19 stuck-at 1
+       Equivalent faults:
+       E> 11->19 stuck-at 0
+       E> 7 stuck-at 0
+
+H> 23 stuck-at 1
+   Equivalent faults:
+   E> 16->23 stuck-at 0
+   E> 19 stuck-at 0
+   Dominates:
+    1-D> 11->19 stuck-at 1
+    1-D> 7 stuck-at 1
+
+H> 3 stuck-at 0
+
+H> 3 stuck-at 1
+
+H> 16 stuck-at 0
+   Dominates:
+    1-D> 2 stuck-at 1
+    1-D> 11->16 stuck-at 1
+
+H> 16 stuck-at 1
+   Equivalent faults:
+   E> 2 stuck-at 0
+   E> 11->16 stuck-at 0
+
+H> 11 stuck-at 0
+   Dominates:
+    1-D> 3->11 stuck-at 1
+    1-D> 6 stuck-at 1
+
+H> 11 stuck-at 1
+   Equivalent faults:
+   E> 3->11 stuck-at 0
+   E> 6 stuck-at 0
+

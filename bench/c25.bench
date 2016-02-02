@@ -1,0 +1,22 @@
+# c25
+# 3 inputs
+# 3 outputs
+# 9 gates
+
+input(A)
+input(B)
+input(C)
+
+output(X)
+output(Y)
+output(Z)
+
+d = and(A, B)
+m = xor(B, d)
+r = xnor(d, m)
+q = not(m)
+s = not(r)
+X = nand(d, r)
+Y = or(s, q)
+v = xnor(s, B)
+Z = nand(v, m, C)
