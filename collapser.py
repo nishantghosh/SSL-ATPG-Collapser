@@ -243,14 +243,54 @@ def collapse_fault(flt, fltclass, top_fcs, circ):
               if(i not in circ.inputs):
                  ret.update(collapse_fault(sa0, fltclass, top_fcs, circ))
 
+    elif name == "BUFF":
+       if rothv == cframe.Roth.One:
+         for i in fanin:
+            if(is_branch(i,circ)):
+              sa1 = cframe.Fault(cframe.Roth.One, i, flt.stem)
+              fltclass.add_equivalent(sa1)
+              ret.add(i)
+            else:
+              sa1 = cframe.Fault(cframe.Roth.One, i)
+              fltclass.add_equivalent(sa1)
+              if(i not in circ.inputs):
+                 ret.update(collapse_fault(sa1, fltclass, top_fcs, circ))
+       else:
+         for i in fanin:
+            if(is_branch(i,circ)):
+              sa0 = cframe.Fault(cframe.Roth.Zero, i, flt.stem)
+              fltclass.add_equivalent(sa0)
+              ret.add(i)
+            else:
+              sa0 = cframe.Fault(cframe.Roth.Zero, i)
+              fltclass.add_equivalent(sa0)
+              if(i not in circ.inputs):
+                 ret.update(collapse_fault(sa0, fltclass, top_fcs, circ))
+
     elif name == "XOR":
        for i in fanin:
           if(is_branch(i, circ)):
+            sa0 = cframe.Fault(cframe.Roth.Zero, i, flt.stem)
+            sa1 = cframe.Fault(cframe.Roth.One, i, flt.stem)
+            fclass_sa0 = cframe.FaultClass(sa0)
+            fclass_sa1 = cframe.FaultClass(sa1)
+            top_fcs.append(fclass_sa0)
+            top_fcs.append(fclass_sa1)
+
+          else:
             ret.add(i)
 
     elif name == "XNOR":
        for i in fanin:
-          ret.add(i)
+          if(is_branch(i, circ)):
+            sa0 = cframe.Fault(cframe.Roth.Zero, i, flt.stem)
+            sa1 = cframe.Fault(cframe.Roth.One, i, flt.stem)
+            fclass_sa0 = cframe.FaultClass(sa0)
+            fclass_sa1 = cframe.FaultClass(sa1)
+            top_fcs.append(fclass_sa0)
+            top_fcs.append(fclass_sa1)
+          else:
+            ret.add(i)
     
     elif name == "INPUT":
        if(is_branch(flt.stem, circ)):
