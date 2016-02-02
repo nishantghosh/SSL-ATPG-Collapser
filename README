@@ -12,7 +12,7 @@ The directory structure is as follows:
 	         The collapse.py as provided automatically creates a log
 		 file when run.
 ----------------------------------------------------------------------------
-
+Tested on Python version 3.4.3
 
 Note that the program will create two output files by default,
 "temp.fclass" and "temp.order". The location (and name) of these files is
