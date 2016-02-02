@@ -1,4 +1,17 @@
 # Fault class tree for bench/c25.bench
+H> Y stuck-at 0
+   Dominates:
+    1-D> s->Y stuck-at 0
+    1-D> q stuck-at 0
+       Equivalent faults:
+       E> m->q stuck-at 1
+
+H> Y stuck-at 1
+   Equivalent faults:
+   E> s->Y stuck-at 1
+   E> q stuck-at 1
+   E> m->q stuck-at 0
+
 H> Z stuck-at 0
    Dominates:
     1-D> v stuck-at 1
@@ -19,14 +32,6 @@ H> Z stuck-at 1
    E> m->Z stuck-at 0
    E> C stuck-at 0
 
-H> s->v stuck-at 0
-
-H> s->v stuck-at 1
-
-H> B->v stuck-at 0
-
-H> B->v stuck-at 1
-
 H> X stuck-at 0
    Dominates:
     1-D> d->X stuck-at 1
@@ -37,48 +42,15 @@ H> X stuck-at 1
    E> d->X stuck-at 0
    E> r->X stuck-at 0
 
-H> Y stuck-at 0
-   Dominates:
-    1-D> s->Y stuck-at 0
-    1-D> q stuck-at 0
-       Equivalent faults:
-       E> m->q stuck-at 1
-
-H> Y stuck-at 1
+H> s stuck-at 0
    Equivalent faults:
-   E> s->Y stuck-at 1
-   E> q stuck-at 1
-   E> m->q stuck-at 0
+   E> r->s stuck-at 1
 
-H> r stuck-at 0
-
-H> d->r stuck-at 0
-
-H> d->r stuck-at 1
-
-H> m->r stuck-at 0
-
-H> m->r stuck-at 1
-
-H> r stuck-at 1
-
-H> d->r stuck-at 0
-
-H> d->r stuck-at 1
-
-H> m->r stuck-at 0
-
-H> m->r stuck-at 1
+H> s stuck-at 1
+   Equivalent faults:
+   E> r->s stuck-at 0
 
 H> m stuck-at 0
-
-H> B->m stuck-at 0
-
-H> B->m stuck-at 1
-
-H> d->m stuck-at 0
-
-H> d->m stuck-at 1
 
 H> m stuck-at 1
 
@@ -90,14 +62,6 @@ H> d->m stuck-at 0
 
 H> d->m stuck-at 1
 
-H> s stuck-at 0
-   Equivalent faults:
-   E> r->s stuck-at 1
-
-H> s stuck-at 1
-   Equivalent faults:
-   E> r->s stuck-at 0
-
 H> d stuck-at 0
    Equivalent faults:
    E> A stuck-at 0
@@ -107,6 +71,18 @@ H> d stuck-at 1
    Dominates:
     1-D> A stuck-at 1
     1-D> B->d stuck-at 1
+
+H> r stuck-at 0
+
+H> r stuck-at 1
+
+H> d->r stuck-at 0
+
+H> d->r stuck-at 1
+
+H> m->r stuck-at 0
+
+H> m->r stuck-at 1
 
 H> B stuck-at 0
 
