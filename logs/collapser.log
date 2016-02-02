@@ -3653,3 +3653,133 @@
 02/01/2016 05:32:50 PM Circuit: add_gates	name:    19	type: NAND
 02/01/2016 05:32:50 PM Circuit: add_gates	name:    22	type: NAND
 02/01/2016 05:32:50 PM Circuit: add_gates	name:    23	type: NAND
+02/01/2016 07:56:49 PM CIRCUIT: read_iscas called on file: bench/b01.bench
+02/01/2016 07:56:49 PM GATE: init	name: LINE1	type: INPUT	#in:     0	#out:     0
+02/01/2016 07:56:49 PM GATE: init	name: LINE2	type: INPUT	#in:     0	#out:     0
+02/01/2016 07:56:49 PM GATE: init	name:STATO_REG_2_	type: INPUT	#in:     0	#out:     0
+02/01/2016 07:56:49 PM GATE: init	name:STATO_REG_1_	type: INPUT	#in:     0	#out:     0
+02/01/2016 07:56:49 PM GATE: init	name:STATO_REG_0_	type: INPUT	#in:     0	#out:     0
+02/01/2016 07:56:49 PM GATE: init	name:   U34	type:  NAND	#in:     4	#out:     0
+02/01/2016 07:56:49 PM GATE: init	name:   U35	type:  NAND	#in:     5	#out:     0
+02/01/2016 07:56:49 PM GATE: init	name:   U36	type:  NAND	#in:     5	#out:     0
+02/01/2016 07:56:49 PM GATE: init	name:   U37	type:  NAND	#in:     3	#out:     0
+02/01/2016 07:56:49 PM GATE: init	name:   U38	type:   AND	#in:     2	#out:     0
+02/01/2016 07:56:49 PM GATE: init	name:   U39	type:   NOT	#in:     1	#out:     0
+02/01/2016 07:56:49 PM GATE: init	name:   U40	type:   NOR	#in:     2	#out:     0
+02/01/2016 07:56:49 PM GATE: init	name:   U41	type:   NOT	#in:     1	#out:     0
+02/01/2016 07:56:49 PM GATE: init	name:   U42	type:   AND	#in:     2	#out:     0
+02/01/2016 07:56:49 PM GATE: init	name:   U43	type:   NOT	#in:     1	#out:     0
+02/01/2016 07:56:49 PM GATE: init	name:   U44	type:   NOR	#in:     2	#out:     0
+02/01/2016 07:56:49 PM GATE: init	name:   U45	type:   AND	#in:     2	#out:     0
+02/01/2016 07:56:49 PM GATE: init	name:   U46	type:  NAND	#in:     2	#out:     0
+02/01/2016 07:56:49 PM GATE: init	name:   U47	type:    OR	#in:     3	#out:     0
+02/01/2016 07:56:49 PM GATE: init	name:   U48	type:   AND	#in:     3	#out:     0
+02/01/2016 07:56:49 PM GATE: init	name:   U49	type:  NAND	#in:     2	#out:     0
+02/01/2016 07:56:49 PM GATE: init	name:   U50	type:  NAND	#in:     3	#out:     0
+02/01/2016 07:56:49 PM GATE: init	name:   U51	type:  NAND	#in:     2	#out:     0
+02/01/2016 07:56:49 PM GATE: init	name:   U52	type:  NAND	#in:     2	#out:     0
+02/01/2016 07:56:49 PM GATE: init	name:   U53	type:  NAND	#in:     2	#out:     0
+02/01/2016 07:56:49 PM GATE: init	name:   U54	type:  NAND	#in:     2	#out:     0
+02/01/2016 07:56:49 PM GATE: init	name:   U55	type:  NAND	#in:     2	#out:     0
+02/01/2016 07:56:49 PM GATE: init	name:   U56	type:  NAND	#in:     2	#out:     0
+02/01/2016 07:56:49 PM GATE: init	name:   U57	type:    OR	#in:     2	#out:     0
+02/01/2016 07:56:49 PM GATE: init	name:   U58	type:  NAND	#in:     2	#out:     0
+02/01/2016 07:56:49 PM GATE: init	name:   U59	type:  NAND	#in:     3	#out:     0
+02/01/2016 07:56:49 PM GATE: init	name:   U60	type:    OR	#in:     2	#out:     0
+02/01/2016 07:56:49 PM GATE: init	name:   U61	type:    OR	#in:     2	#out:     0
+02/01/2016 07:56:49 PM GATE: init	name:   U62	type:  NAND	#in:     2	#out:     0
+02/01/2016 07:56:49 PM GATE: init	name:   U63	type:    OR	#in:     2	#out:     0
+02/01/2016 07:56:49 PM GATE: init	name:   U64	type:    OR	#in:     2	#out:     0
+02/01/2016 07:56:49 PM GATE: init	name:   U65	type:  NAND	#in:     2	#out:     0
+02/01/2016 07:56:49 PM GATE: init	name:   U66	type:  NAND	#in:     2	#out:     0
+02/01/2016 07:56:49 PM GATE: init	name:   U67	type:    OR	#in:     2	#out:     0
+02/01/2016 07:56:49 PM GATE: init	name:   U68	type:  NAND	#in:     2	#out:     0
+02/01/2016 07:56:49 PM GATE: init	name:   U69	type:   NOT	#in:     1	#out:     0
+02/01/2016 07:56:49 PM GATE: init	name:   U70	type:   NOT	#in:     1	#out:     0
+02/01/2016 07:56:49 PM GATE: init	name:U48_PO	type:  BUFF	#in:     1	#out:     0
+02/01/2016 07:56:49 PM CIRCUIT: read_iscas	gate: LINE1	type: INPUT	fanin: []
+02/01/2016 07:56:49 PM CIRCUIT: read_iscas	gate: LINE2	type: INPUT	fanin: []
+02/01/2016 07:56:49 PM CIRCUIT: read_iscas	gate:STATO_REG_2_	type: INPUT	fanin: []
+02/01/2016 07:56:49 PM CIRCUIT: read_iscas	gate:STATO_REG_1_	type: INPUT	fanin: []
+02/01/2016 07:56:49 PM CIRCUIT: read_iscas	gate:STATO_REG_0_	type: INPUT	fanin: []
+02/01/2016 07:56:49 PM CIRCUIT: read_iscas	gate:   U34	type:  NAND	fanin: ['U53', 'U52', 'U50', 'U49']
+02/01/2016 07:56:49 PM CIRCUIT: read_iscas	gate:   U35	type:  NAND	fanin: ['U64', 'U63', 'U45', 'U56', 'U49']
+02/01/2016 07:56:49 PM CIRCUIT: read_iscas	gate:   U36	type:  NAND	fanin: ['U66', 'U65', 'U45', 'U59', 'U50']
+02/01/2016 07:56:49 PM CIRCUIT: read_iscas	gate:   U37	type:  NAND	fanin: ['U68', 'U67', 'U47']
+02/01/2016 07:56:49 PM CIRCUIT: read_iscas	gate:   U38	type:   AND	fanin: ['STATO_REG_1_', 'U43']
+02/01/2016 07:56:49 PM CIRCUIT: read_iscas	gate:   U39	type:   NOT	fanin: ['LINE1']
+02/01/2016 07:56:49 PM CIRCUIT: read_iscas	gate:   U40	type:   NOR	fanin: ['U42', 'STATO_REG_1_']
+02/01/2016 07:56:49 PM CIRCUIT: read_iscas	gate:   U41	type:   NOT	fanin: ['STATO_REG_2_']
+02/01/2016 07:56:49 PM CIRCUIT: read_iscas	gate:   U42	type:   AND	fanin: ['LINE1', 'LINE2']
+02/01/2016 07:56:49 PM CIRCUIT: read_iscas	gate:   U43	type:   NOT	fanin: ['STATO_REG_0_']
+02/01/2016 07:56:49 PM CIRCUIT: read_iscas	gate:   U44	type:   NOR	fanin: ['U43', 'U41']
+02/01/2016 07:56:49 PM CIRCUIT: read_iscas	gate:   U45	type:   AND	fanin: ['U55', 'U54']
+02/01/2016 07:56:49 PM CIRCUIT: read_iscas	gate:   U46	type:  NAND	fanin: ['U62', 'U61']
+02/01/2016 07:56:49 PM CIRCUIT: read_iscas	gate:   U47	type:    OR	fanin: ['U41', 'STATO_REG_1_', 'U46']
+02/01/2016 07:56:49 PM CIRCUIT: read_iscas	gate:   U48	type:   AND	fanin: ['STATO_REG_1_', 'U41', 'STATO_REG_0_']
+02/01/2016 07:56:49 PM CIRCUIT: read_iscas	gate:   U49	type:  NAND	fanin: ['U38', 'U41']
+02/01/2016 07:56:49 PM CIRCUIT: read_iscas	gate:   U50	type:  NAND	fanin: ['U40', 'U46', 'STATO_REG_2_']
+02/01/2016 07:56:49 PM CIRCUIT: read_iscas	gate:   U51	type:  NAND	fanin: ['STATO_REG_2_', 'STATO_REG_1_']
+02/01/2016 07:56:49 PM CIRCUIT: read_iscas	gate:   U52	type:  NAND	fanin: ['U42', 'U51']
+02/01/2016 07:56:49 PM CIRCUIT: read_iscas	gate:   U53	type:  NAND	fanin: ['U44', 'U40']
+02/01/2016 07:56:49 PM CIRCUIT: read_iscas	gate:   U54	type:  NAND	fanin: ['U44', 'U46']
+02/01/2016 07:56:49 PM CIRCUIT: read_iscas	gate:   U55	type:  NAND	fanin: ['U42', 'U38']
+02/01/2016 07:56:49 PM CIRCUIT: read_iscas	gate:   U56	type:  NAND	fanin: ['STATO_REG_0_', 'U40']
+02/01/2016 07:56:49 PM CIRCUIT: read_iscas	gate:   U57	type:    OR	fanin: ['U43', 'STATO_REG_1_']
+02/01/2016 07:56:49 PM CIRCUIT: read_iscas	gate:   U58	type:  NAND	fanin: ['U41', 'U57']
+02/01/2016 07:56:49 PM CIRCUIT: read_iscas	gate:   U59	type:  NAND	fanin: ['U43', 'U41', 'U40']
+02/01/2016 07:56:49 PM CIRCUIT: read_iscas	gate:   U60	type:    OR	fanin: ['U41', 'U38']
+02/01/2016 07:56:49 PM CIRCUIT: read_iscas	gate:   U61	type:    OR	fanin: ['U39', 'LINE2']
+02/01/2016 07:56:49 PM CIRCUIT: read_iscas	gate:   U62	type:  NAND	fanin: ['LINE2', 'U39']
+02/01/2016 07:56:49 PM CIRCUIT: read_iscas	gate:   U63	type:    OR	fanin: ['U47', 'U42']
+02/01/2016 07:56:49 PM CIRCUIT: read_iscas	gate:   U64	type:    OR	fanin: ['U70', 'U69']
+02/01/2016 07:56:49 PM CIRCUIT: read_iscas	gate:   U65	type:  NAND	fanin: ['U48', 'U69']
+02/01/2016 07:56:49 PM CIRCUIT: read_iscas	gate:   U66	type:  NAND	fanin: ['U42', 'U58']
+02/01/2016 07:56:49 PM CIRCUIT: read_iscas	gate:   U67	type:    OR	fanin: ['U46', 'U70']
+02/01/2016 07:56:49 PM CIRCUIT: read_iscas	gate:   U68	type:  NAND	fanin: ['U46', 'U60']
+02/01/2016 07:56:49 PM CIRCUIT: read_iscas	gate:   U69	type:   NOT	fanin: ['U42']
+02/01/2016 07:56:49 PM CIRCUIT: read_iscas	gate:   U70	type:   NOT	fanin: ['U44']
+02/01/2016 07:56:49 PM CIRCUIT: read_iscas	gate:U48_PO	type:  BUFF	fanin: ['U48']
+02/01/2016 07:56:49 PM Circuit: add_gates	name: LINE1	type: INPUT
+02/01/2016 07:56:49 PM Circuit: add_gates	name: LINE2	type: INPUT
+02/01/2016 07:56:49 PM Circuit: add_gates	name:STATO_REG_2_	type: INPUT
+02/01/2016 07:56:49 PM Circuit: add_gates	name:STATO_REG_1_	type: INPUT
+02/01/2016 07:56:49 PM Circuit: add_gates	name:STATO_REG_0_	type: INPUT
+02/01/2016 07:56:49 PM Circuit: add_gates	name:   U34	type: NAND
+02/01/2016 07:56:49 PM Circuit: add_gates	name:   U35	type: NAND
+02/01/2016 07:56:49 PM Circuit: add_gates	name:   U36	type: NAND
+02/01/2016 07:56:49 PM Circuit: add_gates	name:   U37	type: NAND
+02/01/2016 07:56:49 PM Circuit: add_gates	name:   U38	type: AND
+02/01/2016 07:56:49 PM Circuit: add_gates	name:   U39	type: NOT
+02/01/2016 07:56:49 PM Circuit: add_gates	name:   U40	type: NOR
+02/01/2016 07:56:49 PM Circuit: add_gates	name:   U41	type: NOT
+02/01/2016 07:56:49 PM Circuit: add_gates	name:   U42	type: AND
+02/01/2016 07:56:49 PM Circuit: add_gates	name:   U43	type: NOT
+02/01/2016 07:56:49 PM Circuit: add_gates	name:   U44	type: NOR
+02/01/2016 07:56:49 PM Circuit: add_gates	name:   U45	type: AND
+02/01/2016 07:56:49 PM Circuit: add_gates	name:   U46	type: NAND
+02/01/2016 07:56:49 PM Circuit: add_gates	name:   U47	type: OR
+02/01/2016 07:56:49 PM Circuit: add_gates	name:   U48	type: AND
+02/01/2016 07:56:49 PM Circuit: add_gates	name:   U49	type: NAND
+02/01/2016 07:56:49 PM Circuit: add_gates	name:   U50	type: NAND
+02/01/2016 07:56:49 PM Circuit: add_gates	name:   U51	type: NAND
+02/01/2016 07:56:49 PM Circuit: add_gates	name:   U52	type: NAND
+02/01/2016 07:56:49 PM Circuit: add_gates	name:   U53	type: NAND
+02/01/2016 07:56:49 PM Circuit: add_gates	name:   U54	type: NAND
+02/01/2016 07:56:49 PM Circuit: add_gates	name:   U55	type: NAND
+02/01/2016 07:56:49 PM Circuit: add_gates	name:   U56	type: NAND
+02/01/2016 07:56:49 PM Circuit: add_gates	name:   U57	type: OR
+02/01/2016 07:56:49 PM Circuit: add_gates	name:   U58	type: NAND
+02/01/2016 07:56:49 PM Circuit: add_gates	name:   U59	type: NAND
+02/01/2016 07:56:49 PM Circuit: add_gates	name:   U60	type: OR
+02/01/2016 07:56:49 PM Circuit: add_gates	name:   U61	type: OR
+02/01/2016 07:56:49 PM Circuit: add_gates	name:   U62	type: NAND
+02/01/2016 07:56:49 PM Circuit: add_gates	name:   U63	type: OR
+02/01/2016 07:56:49 PM Circuit: add_gates	name:   U64	type: OR
+02/01/2016 07:56:49 PM Circuit: add_gates	name:   U65	type: NAND
+02/01/2016 07:56:49 PM Circuit: add_gates	name:   U66	type: NAND
+02/01/2016 07:56:49 PM Circuit: add_gates	name:   U67	type: OR
+02/01/2016 07:56:49 PM Circuit: add_gates	name:   U68	type: NAND
+02/01/2016 07:56:49 PM Circuit: add_gates	name:   U69	type: NOT
+02/01/2016 07:56:49 PM Circuit: add_gates	name:   U70	type: NOT
+02/01/2016 07:56:49 PM Circuit: add_gates	name:U48_PO	type: BUFF

@@ -1,57 +1,331 @@
-# Fault class tree for bench/c17.bench
-H> 23 stuck-at 0
+# Fault class tree for bench/b01.bench
+H> U36 stuck-at 0
    Dominates:
-    1-D> 16->23 stuck-at 1
-    1-D> 19 stuck-at 1
+    1-D> U66 stuck-at 1
        Equivalent faults:
-       E> 11->19 stuck-at 0
-       E> 7 stuck-at 0
-
-H> 23 stuck-at 1
-   Equivalent faults:
-   E> 16->23 stuck-at 0
-   E> 19 stuck-at 0
-   Dominates:
-    1-D> 11->19 stuck-at 1
-    1-D> 7 stuck-at 1
-
-H> 11 stuck-at 0
-   Dominates:
-    1-D> 3->11 stuck-at 1
-    1-D> 6 stuck-at 1
-
-H> 11 stuck-at 1
-   Equivalent faults:
-   E> 3->11 stuck-at 0
-   E> 6 stuck-at 0
-
-H> 16 stuck-at 0
-   Dominates:
-    1-D> 2 stuck-at 1
-    1-D> 11->16 stuck-at 1
-
-H> 16 stuck-at 1
-   Equivalent faults:
-   E> 2 stuck-at 0
-   E> 11->16 stuck-at 0
-
-H> 22 stuck-at 0
-   Dominates:
-    1-D> 10 stuck-at 1
+       E> U42->U66 stuck-at 0
+       E> U58 stuck-at 0
+       Dominates:
+        2-D> U41->U58 stuck-at 1
+        2-D> U57 stuck-at 1
+           Equivalent faults:
+           E> U43->U57 stuck-at 1
+           E> STATO_REG_1_->U57 stuck-at 1
+    1-D> U65 stuck-at 1
        Equivalent faults:
-       E> 1 stuck-at 0
-       E> 3->10 stuck-at 0
-    1-D> 16->22 stuck-at 1
+       E> U48->U65 stuck-at 0
+       E> U69->U65 stuck-at 0
+    1-D> U45->U36 stuck-at 1
+    1-D> U59 stuck-at 1
+       Equivalent faults:
+       E> U43->U59 stuck-at 0
+       E> U41->U59 stuck-at 0
+       E> U40->U59 stuck-at 0
+    1-D> U50->U36 stuck-at 1
 
-H> 22 stuck-at 1
+H> U36 stuck-at 1
    Equivalent faults:
-   E> 10 stuck-at 0
-   E> 16->22 stuck-at 0
+   E> U66 stuck-at 0
+   E> U65 stuck-at 0
+   E> U45->U36 stuck-at 0
+   E> U59 stuck-at 0
+   E> U50->U36 stuck-at 0
    Dominates:
-    1-D> 1 stuck-at 1
-    1-D> 3->10 stuck-at 1
+    1-D> U42->U66 stuck-at 1
+    1-D> U58 stuck-at 1
+       Equivalent faults:
+       E> U41->U58 stuck-at 0
+       E> U57 stuck-at 0
+       Dominates:
+        2-D> U43->U57 stuck-at 0
+        2-D> STATO_REG_1_->U57 stuck-at 0
+    1-D> U48->U65 stuck-at 1
+    1-D> U69->U65 stuck-at 1
+    1-D> U43->U59 stuck-at 1
+    1-D> U41->U59 stuck-at 1
+    1-D> U40->U59 stuck-at 1
 
-H> 3 stuck-at 0
+H> U42 stuck-at 0
+   Equivalent faults:
+   E> LINE1->U42 stuck-at 0
+   E> LINE2->U42 stuck-at 0
 
-H> 3 stuck-at 1
+H> U42 stuck-at 1
+   Dominates:
+    1-D> LINE1->U42 stuck-at 1
+    1-D> LINE2->U42 stuck-at 1
+
+H> U34 stuck-at 0
+   Dominates:
+    1-D> U53 stuck-at 1
+       Equivalent faults:
+       E> U44->U53 stuck-at 0
+       E> U40->U53 stuck-at 0
+    1-D> U52 stuck-at 1
+       Equivalent faults:
+       E> U42->U52 stuck-at 0
+       E> U51 stuck-at 0
+       Dominates:
+        2-D> STATO_REG_2_->U51 stuck-at 1
+        2-D> STATO_REG_1_->U51 stuck-at 1
+    1-D> U50->U34 stuck-at 1
+    1-D> U49->U34 stuck-at 1
+
+H> U34 stuck-at 1
+   Equivalent faults:
+   E> U53 stuck-at 0
+   E> U52 stuck-at 0
+   E> U50->U34 stuck-at 0
+   E> U49->U34 stuck-at 0
+   Dominates:
+    1-D> U44->U53 stuck-at 1
+    1-D> U40->U53 stuck-at 1
+    1-D> U42->U52 stuck-at 1
+    1-D> U51 stuck-at 1
+       Equivalent faults:
+       E> STATO_REG_2_->U51 stuck-at 0
+       E> STATO_REG_1_->U51 stuck-at 0
+
+H> U37 stuck-at 0
+   Dominates:
+    1-D> U68 stuck-at 1
+       Equivalent faults:
+       E> U46->U68 stuck-at 0
+       E> U60 stuck-at 0
+       Dominates:
+        2-D> U41->U60 stuck-at 0
+        2-D> U38->U60 stuck-at 0
+    1-D> U67 stuck-at 1
+       Equivalent faults:
+       E> U46->U67 stuck-at 1
+       E> U70->U67 stuck-at 1
+    1-D> U47->U37 stuck-at 1
+
+H> U37 stuck-at 1
+   Equivalent faults:
+   E> U68 stuck-at 0
+   E> U67 stuck-at 0
+   E> U47->U37 stuck-at 0
+   Dominates:
+    1-D> U46->U68 stuck-at 1
+    1-D> U60 stuck-at 1
+       Equivalent faults:
+       E> U41->U60 stuck-at 1
+       E> U38->U60 stuck-at 1
+    1-D> U46->U67 stuck-at 0
+    1-D> U70->U67 stuck-at 0
+
+H> U46 stuck-at 0
+   Dominates:
+    1-D> U62 stuck-at 1
+       Equivalent faults:
+       E> LINE2->U62 stuck-at 0
+       E> U39->U62 stuck-at 0
+    1-D> U61 stuck-at 1
+       Equivalent faults:
+       E> U39->U61 stuck-at 1
+       E> LINE2->U61 stuck-at 1
+
+H> U46 stuck-at 1
+   Equivalent faults:
+   E> U62 stuck-at 0
+   E> U61 stuck-at 0
+   Dominates:
+    1-D> LINE2->U62 stuck-at 1
+    1-D> U39->U62 stuck-at 1
+    1-D> U39->U61 stuck-at 0
+    1-D> LINE2->U61 stuck-at 0
+
+H> U38 stuck-at 0
+   Equivalent faults:
+   E> STATO_REG_1_->U38 stuck-at 0
+   E> U43->U38 stuck-at 0
+
+H> U38 stuck-at 1
+   Dominates:
+    1-D> STATO_REG_1_->U38 stuck-at 1
+    1-D> U43->U38 stuck-at 1
+
+H> U40 stuck-at 0
+   Equivalent faults:
+   E> U42->U40 stuck-at 1
+   E> STATO_REG_1_->U40 stuck-at 1
+
+H> U40 stuck-at 1
+   Dominates:
+    1-D> U42->U40 stuck-at 0
+    1-D> STATO_REG_1_->U40 stuck-at 0
+
+H> U48 stuck-at 0
+   Equivalent faults:
+   E> STATO_REG_1_->U48 stuck-at 0
+   E> U41->U48 stuck-at 0
+   E> STATO_REG_0_->U48 stuck-at 0
+
+H> U48 stuck-at 1
+   Dominates:
+    1-D> STATO_REG_1_->U48 stuck-at 1
+    1-D> U41->U48 stuck-at 1
+    1-D> STATO_REG_0_->U48 stuck-at 1
+
+H> LINE1 stuck-at 0
+
+H> LINE1 stuck-at 1
+
+H> U70 stuck-at 0
+   Equivalent faults:
+   E> U44->U70 stuck-at 1
+
+H> U70 stuck-at 1
+   Equivalent faults:
+   E> U44->U70 stuck-at 0
+
+H> STATO_REG_2_ stuck-at 0
+
+H> STATO_REG_2_ stuck-at 1
+
+H> U47 stuck-at 0
+   Dominates:
+    1-D> U41->U47 stuck-at 0
+    1-D> STATO_REG_1_->U47 stuck-at 0
+    1-D> U46->U47 stuck-at 0
+
+H> U47 stuck-at 1
+   Equivalent faults:
+   E> U41->U47 stuck-at 1
+   E> STATO_REG_1_->U47 stuck-at 1
+   E> U46->U47 stuck-at 1
+
+H> U41 stuck-at 0
+   Equivalent faults:
+   E> STATO_REG_2_->U41 stuck-at 1
+
+H> U41 stuck-at 1
+   Equivalent faults:
+   E> STATO_REG_2_->U41 stuck-at 0
+
+H> STATO_REG_0_ stuck-at 0
+
+H> STATO_REG_0_ stuck-at 1
+
+H> U49 stuck-at 0
+   Dominates:
+    1-D> U38->U49 stuck-at 1
+    1-D> U41->U49 stuck-at 1
+
+H> U49 stuck-at 1
+   Equivalent faults:
+   E> U38->U49 stuck-at 0
+   E> U41->U49 stuck-at 0
+
+H> U45 stuck-at 0
+   Equivalent faults:
+   E> U55 stuck-at 0
+   E> U54 stuck-at 0
+   Dominates:
+    1-D> U42->U55 stuck-at 1
+    1-D> U38->U55 stuck-at 1
+    1-D> U44->U54 stuck-at 1
+    1-D> U46->U54 stuck-at 1
+
+H> U45 stuck-at 1
+   Dominates:
+    1-D> U55 stuck-at 1
+       Equivalent faults:
+       E> U42->U55 stuck-at 0
+       E> U38->U55 stuck-at 0
+    1-D> U54 stuck-at 1
+       Equivalent faults:
+       E> U44->U54 stuck-at 0
+       E> U46->U54 stuck-at 0
+
+H> U69 stuck-at 0
+   Equivalent faults:
+   E> U42->U69 stuck-at 1
+
+H> U69 stuck-at 1
+   Equivalent faults:
+   E> U42->U69 stuck-at 0
+
+H> U50 stuck-at 0
+   Dominates:
+    1-D> U40->U50 stuck-at 1
+    1-D> U46->U50 stuck-at 1
+    1-D> STATO_REG_2_->U50 stuck-at 1
+
+H> U50 stuck-at 1
+   Equivalent faults:
+   E> U40->U50 stuck-at 0
+   E> U46->U50 stuck-at 0
+   E> STATO_REG_2_->U50 stuck-at 0
+
+H> U44 stuck-at 0
+   Equivalent faults:
+   E> U43->U44 stuck-at 1
+   E> U41->U44 stuck-at 1
+
+H> U44 stuck-at 1
+   Dominates:
+    1-D> U43->U44 stuck-at 0
+    1-D> U41->U44 stuck-at 0
+
+H> U39 stuck-at 0
+   Equivalent faults:
+   E> LINE1->U39 stuck-at 1
+
+H> U39 stuck-at 1
+   Equivalent faults:
+   E> LINE1->U39 stuck-at 0
+
+H> STATO_REG_1_ stuck-at 0
+
+H> STATO_REG_1_ stuck-at 1
+
+H> U35 stuck-at 0
+   Dominates:
+    1-D> U64 stuck-at 1
+       Equivalent faults:
+       E> U70->U64 stuck-at 1
+       E> U69->U64 stuck-at 1
+    1-D> U63 stuck-at 1
+       Equivalent faults:
+       E> U47->U63 stuck-at 1
+       E> U42->U63 stuck-at 1
+    1-D> U45->U35 stuck-at 1
+    1-D> U56 stuck-at 1
+       Equivalent faults:
+       E> STATO_REG_0_->U56 stuck-at 0
+       E> U40->U56 stuck-at 0
+    1-D> U49->U35 stuck-at 1
+
+H> U35 stuck-at 1
+   Equivalent faults:
+   E> U64 stuck-at 0
+   E> U63 stuck-at 0
+   E> U45->U35 stuck-at 0
+   E> U56 stuck-at 0
+   E> U49->U35 stuck-at 0
+   Dominates:
+    1-D> U70->U64 stuck-at 0
+    1-D> U69->U64 stuck-at 0
+    1-D> U47->U63 stuck-at 0
+    1-D> U42->U63 stuck-at 0
+    1-D> STATO_REG_0_->U56 stuck-at 1
+    1-D> U40->U56 stuck-at 1
+
+H> U48_PO stuck-at 0
+
+H> U48_PO stuck-at 1
+
+H> U43 stuck-at 0
+   Equivalent faults:
+   E> STATO_REG_0_->U43 stuck-at 1
+
+H> U43 stuck-at 1
+   Equivalent faults:
+   E> STATO_REG_0_->U43 stuck-at 0
+
+H> LINE2 stuck-at 0
+
+H> LINE2 stuck-at 1
 

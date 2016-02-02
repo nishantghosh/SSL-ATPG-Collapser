@@ -43,8 +43,7 @@ def main():
     # Note: you will need to create your own function, call it (probably from here),
     # and properly write the results to a file if you choose to do the extra credit.
     #print("TODO: dominated_not_dominating extra credit (if desired).")
-    def dominated_not_dominating(collapsed, dom):
-        for fcs in collapsed:
+    
            
        
         
@@ -247,8 +246,7 @@ def collapse_fault(flt, fltclass, top_fcs, circ):
     elif name == "XOR":
        for i in fanin:
           if(is_branch(i, circ)):
-             sa0 = cframe.Fault(cframe.Roth.Zero, i , flt.stem)
-             sa1 = 
+            ret.add(i)
 
     elif name == "XNOR":
        for i in fanin:
