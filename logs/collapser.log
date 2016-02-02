@@ -4191,3 +4191,40 @@
 02/01/2016 10:02:59 PM Circuit: add_gates	name:     Y	type: OR
 02/01/2016 10:02:59 PM Circuit: add_gates	name:     v	type: XNOR
 02/01/2016 10:02:59 PM Circuit: add_gates	name:     Z	type: NAND
+02/01/2016 10:15:16 PM CIRCUIT: read_iscas called on file: bench/c25.bench
+02/01/2016 10:15:16 PM GATE: init	name:     A	type: INPUT	#in:     0	#out:     0
+02/01/2016 10:15:16 PM GATE: init	name:     B	type: INPUT	#in:     0	#out:     0
+02/01/2016 10:15:16 PM GATE: init	name:     C	type: INPUT	#in:     0	#out:     0
+02/01/2016 10:15:16 PM GATE: init	name:     d	type:   AND	#in:     2	#out:     0
+02/01/2016 10:15:16 PM GATE: init	name:     m	type:   XOR	#in:     2	#out:     0
+02/01/2016 10:15:16 PM GATE: init	name:     r	type:  XNOR	#in:     2	#out:     0
+02/01/2016 10:15:16 PM GATE: init	name:     q	type:   NOT	#in:     1	#out:     0
+02/01/2016 10:15:16 PM GATE: init	name:     s	type:   NOT	#in:     1	#out:     0
+02/01/2016 10:15:16 PM GATE: init	name:     X	type:  NAND	#in:     2	#out:     0
+02/01/2016 10:15:16 PM GATE: init	name:     Y	type:    OR	#in:     2	#out:     0
+02/01/2016 10:15:16 PM GATE: init	name:     v	type:  XNOR	#in:     2	#out:     0
+02/01/2016 10:15:16 PM GATE: init	name:     Z	type:  NAND	#in:     3	#out:     0
+02/01/2016 10:15:16 PM CIRCUIT: read_iscas	gate:     A	type: INPUT	fanin: []
+02/01/2016 10:15:16 PM CIRCUIT: read_iscas	gate:     B	type: INPUT	fanin: []
+02/01/2016 10:15:16 PM CIRCUIT: read_iscas	gate:     C	type: INPUT	fanin: []
+02/01/2016 10:15:16 PM CIRCUIT: read_iscas	gate:     d	type:   AND	fanin: ['A', 'B']
+02/01/2016 10:15:16 PM CIRCUIT: read_iscas	gate:     m	type:   XOR	fanin: ['B', 'd']
+02/01/2016 10:15:16 PM CIRCUIT: read_iscas	gate:     r	type:  XNOR	fanin: ['d', 'm']
+02/01/2016 10:15:16 PM CIRCUIT: read_iscas	gate:     q	type:   NOT	fanin: ['m']
+02/01/2016 10:15:16 PM CIRCUIT: read_iscas	gate:     s	type:   NOT	fanin: ['r']
+02/01/2016 10:15:16 PM CIRCUIT: read_iscas	gate:     X	type:  NAND	fanin: ['d', 'r']
+02/01/2016 10:15:16 PM CIRCUIT: read_iscas	gate:     Y	type:    OR	fanin: ['s', 'q']
+02/01/2016 10:15:16 PM CIRCUIT: read_iscas	gate:     v	type:  XNOR	fanin: ['s', 'B']
+02/01/2016 10:15:16 PM CIRCUIT: read_iscas	gate:     Z	type:  NAND	fanin: ['v', 'm', 'C']
+02/01/2016 10:15:16 PM Circuit: add_gates	name:     A	type: INPUT
+02/01/2016 10:15:16 PM Circuit: add_gates	name:     B	type: INPUT
+02/01/2016 10:15:16 PM Circuit: add_gates	name:     C	type: INPUT
+02/01/2016 10:15:16 PM Circuit: add_gates	name:     d	type: AND
+02/01/2016 10:15:16 PM Circuit: add_gates	name:     m	type: XOR
+02/01/2016 10:15:16 PM Circuit: add_gates	name:     r	type: XNOR
+02/01/2016 10:15:16 PM Circuit: add_gates	name:     q	type: NOT
+02/01/2016 10:15:16 PM Circuit: add_gates	name:     s	type: NOT
+02/01/2016 10:15:16 PM Circuit: add_gates	name:     X	type: NAND
+02/01/2016 10:15:16 PM Circuit: add_gates	name:     Y	type: OR
+02/01/2016 10:15:16 PM Circuit: add_gates	name:     v	type: XNOR
+02/01/2016 10:15:16 PM Circuit: add_gates	name:     Z	type: NAND

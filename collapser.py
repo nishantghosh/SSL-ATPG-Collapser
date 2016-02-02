@@ -91,14 +91,14 @@ def collapse_circuit(circ):
 
 def collapse_fault(flt, fltclass, top_fcs, circ):
     """Collapse single fault in a cframe Circuit object"""
-    ret = set()
-    rothv = flt.value
-    fanin = []
+    ret = set() #Set of classes to add to gate_queue
+    rothv = flt.value #Stuck-at value of stem
+    fanin = [] #List of fan-ins of stem
     name = "" 
     # Get gate type and list of fan-in
     for gate in circ.gatemap.values():
        if flt.stem == gate.name: 
-          name = gate.gatetype
+          name = gate.gatetype 
           fanin = gate.fanin
 
     # Check if net is a branch
@@ -121,28 +121,32 @@ def collapse_fault(flt, fltclass, top_fcs, circ):
 
     """ Collapse fault for different types of gates """
     if name == "AND":
-       if rothv == cframe.Roth.Zero:
+       #If gate stuck-at 0 (cframe.Roth.Zero)
+       if rothv == cframe.Roth.Zero: 
          for i in fanin:
-            if(is_branch(i, circ)):
+            if(is_branch(i, circ)): #Check if the net is a branch
                sa0 = cframe.Fault(cframe.Roth.Zero, i, flt.stem)
-               fltclass.add_equivalent(sa0)
+               fltclass.add_equivalent(sa0) 
                ret.add(i)
             else:
                sa0 = cframe.Fault(cframe.Roth.Zero, i)
                fltclass.add_equivalent(sa0)
+               # Pass top fault class recursively for equivalent classes
                ret.update(collapse_fault(sa0, fltclass, top_fcs, circ))
-               
+
+       #If gate stuck-at 1(cframe.Roth.One)        
        else:
          for i in fanin:
             if(is_branch(i, circ)):
                sa1 = cframe.Fault(cframe.Roth.One, i, flt.stem)
                fltclass_sa = cframe.FaultClass(sa1)
                fltclass.add_dominated(fltclass_sa)
-               ret.add(i)
+               ret.add(i) #Add to set of classes to return to collapse_circuit()
             else:
                sa1 = cframe.Fault(cframe.Roth.One, i)
                fltclass_sa = cframe.FaultClass(sa1)
-               ret.update(collapse_fault(sa1,fltclass_sa,top_fcs,circ))
+               # Pass new/dominated fault class recursively for dominated classes
+               ret.update(collapse_fault(sa1,fltclass_sa,top_fcs,circ)) 
                fltclass.add_dominated(fltclass_sa)
 
     elif name == "NAND":
@@ -266,7 +270,7 @@ def collapse_fault(flt, fltclass, top_fcs, circ):
               fltclass.add_equivalent(sa0)
               if(i not in circ.inputs):
                  ret.update(collapse_fault(sa0, fltclass, top_fcs, circ))
-
+    # XOR/XNOR have no equivalence/dominance relations so start fresh for fan-ins
     elif name == "XOR":
        if rothv == cframe.Roth.One: 
          for i in fanin:
@@ -294,25 +298,22 @@ def collapse_fault(flt, fltclass, top_fcs, circ):
 
             else:
               ret.add(i)
-    
+    # Add primary input to gate queue only if it fans out
     elif name == "INPUT":
        if(is_branch(flt.stem, circ)):
           ret.add(flt.stem)
     
 											
-    return ret
+    return ret #Return set of clsses to be added to gate queue
 
 def order(fltclass, ordered):
-    
+    # Recursively check if a class dominates other classes and add to list 
+    # so that dominating classes appear after dominated ones. 
     if(fltclass.dominated != []):
       for cls in fltclass.dominated:
         order(cls, ordered)
     
     ordered.append(fltclass)
-
-   
-    
-    #print("TODO: Complete this function to put all fault classes in order into the \"ordered\" list provided.")
 
 
 if __name__ == '__main__':
